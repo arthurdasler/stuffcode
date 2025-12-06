@@ -1,0 +1,103 @@
+.wrapper-full {
+
+    width: 95vw;
+    box-sizing: border-box;
+    padding: var(--space-3);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.wrapper-standart {
+    width: 70vw;
+    box-sizing: border-box;
+    padding: var(--space-3);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.wrapper-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-3);
+    justify-content: center;
+    padding: var(--space-3);
+}
+
+.item-grid {
+    padding: var(--space-3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.item-grid img {
+    border-radius: 30px;
+    width: 20vw;
+}
+
+.wrapper-column {
+    width: 95vw;
+    display: flex;
+    gap: 10px;
+    flex-direction: row;
+    align-items: center;
+    margin-right: auto;
+    margin-left: auto;
+    gap: 12px;
+}
+
+.item-column {
+    box-sizing: border-box;
+    padding: var(--space-3);
+    width: 100%;
+}
+
+.footer {
+    flex-shrink: 0;
+    padding: var(--space-3);
+}
+
+.nav-bar {
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    left: 0;
+    right: 0;
+    padding-bottom: var(--space-2);
+    padding: var(--space-6);
+
+    z-index: 100; /* выше контента, ниже модалок */
+}
+
+.nav-bar-inner {
+    background-color: #dcdcdc58;
+    padding: var(--space-2);
+    border-radius: 50px;
+    backdrop-filter: blur(10px) saturate(180%);
+    -webkit-backdrop-filter: blur(18px) saturate(180%); /* для Safari */
+    border: 1px solid #dcdcdc58;
+}
+
+
+
+
+@media (max-width:786px) {
+    .wrapper-full {
+        width: 98vw;
+        box-sizing: border-box;
+        padding: var(--space-3);
+    }
+    .wrapper-standart {
+        width: 98vw;
+        box-sizing: border-box;
+        padding: var(--space-3);
+    }
+    .wrapper-column {
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}

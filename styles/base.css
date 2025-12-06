@@ -1,0 +1,134 @@
+/* базовая типографика, body, ссылки */
+
+@font-face {
+    font-family: 'Stuff Spec';
+    src: url('../fonts/Stuff-spec.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-family-regular);
+    font-size: var(--fs-4);
+    color: var(--black);
+    line-height: 1.5;
+}
+
+/* Заголовки */
+
+h1 {
+    font-size: var(--fs-1);
+    margin: 0;
+}
+
+h2 {
+    font-size: var(--fs-2);
+    margin: 0;
+}
+
+h3 {
+    font-size: var(--fs-3);
+    margin: 0;
+}
+
+.spec {
+    font-family: 'stuff spec';
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+    line-height: 1;
+}
+
+/* Текст */
+
+p {
+    font-size: var(--fs-4);
+    margin: 0;
+    max-width: 900px;
+}
+
+.mono {
+    font-style: mono;
+}
+
+/* Ссылки */
+
+a {
+    color: var(--black);
+    text-decoration: none;
+}
+
+
+
+code {
+    font-family: 'inter', sans-serif;
+    background-color: var(--white-100);
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-size: var(--fs-4);
+    width: fit-content;
+    border: var(--white-200) 1px solid;
+    text-wrap: nowrap;
+}
+
+.p-min {
+    font-size: var(--fs-5);
+    color: var(--black);
+    opacity: 0.7;
+}
+
+.p-up {
+    font-size: var(--fs-5);
+    color: var(--black);
+    opacity: 0.7;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+mark {
+    font-size: var(--fs-4);
+    width: fit-content;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid var(--white-200);
+    width: 100%;
+}
+
+/* Изображения */
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.field {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-2);
+}
+
+/* Лейбл над инпутом */
+
+.field__label {
+    font-size: var(--fs-4);
+    font-weight: 500;
+}
+
+.field__description {
+    font-size: var(--fs-5);
+    color: var(--white-400);
+}
+
+.field__error {
+    font-size: var(--fs-5);
+    color: var(--orange-500);
+}
+
