@@ -1,40 +1,46 @@
-/* переменные: цвета, шрифты, размеры, отступы */
-
-/* * {
-    border: 0.1px solid red;
-} */
-
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
 :root {
 
-    /* Цвета (базовая палитра) */
 
-    --white-50: #FFFFFF;
-    --white-100: #EFEFEF;
-    --white-200: #DCDCDC;
-    --white-300: #BDBDBD;
+    --primary: #FF6822;
+    --secondary: #407BF1;
+
+
+
+
+    --primary-50: color-mix(in srgb, var(--primary) 10%, white);
+    --primary-100: color-mix(in srgb, var(--primary) 25%, white);
+    --primary-200: color-mix(in srgb, var(--primary) 40%, white);
+    --primary-300: color-mix(in srgb, var(--primary) 60%, white);
+    --primary-400: color-mix(in srgb, var(--primary) 75%, white);
+    --primary-500: var(--primary);
+    --primary-600: color-mix(in srgb, var(--primary) 80%, black);
+
+
+    --secondary-50: color-mix(in srgb, var(--secondary) 10%, white);
+    --secondary-100: color-mix(in srgb, var(--secondary) 25%, white);
+    --secondary-200: color-mix(in srgb, var(--secondary) 40%, white);
+    --secondary-300: color-mix(in srgb, var(--secondary) 60%, white);
+    --secondary-400: color-mix(in srgb, var(--secondary) 75%, white);
+    --secondary-500: var(--secondary);
+    --secondary-600: color-mix(in srgb, var(--secondary) 80%, black);
+    
+    --white: #ffffff;
+    --white-50: #f8f8f8;
+    --white-100: #f2f2f2;
+    --white-200: #dcdcdc;
+    --white-300: #bdbdbd;
     --white-400: #989898;
-    --white-500: #7C7C7C;
-
-    --orange-50: #FFF5ED;
-    --orange-100: #FFE9D4;
-    --orange-200: #FFCFA8;
-    --orange-300: #FFAD70;
-    --orange-400: #FF7E37;
-    --orange-500: #FF6822;
-    --orange-600: #e25b1d;
-
-    --blue-50: #EFF5FF;
-    --blue-100: #DCE9FD;
-    --blue-200: #C1D8FC;
-    --blue-300: #84B6F9;
-    --blue-400: #659FF5;
-    --blue-500: #407BF1;
-
+    --white-500: #7c7c7c;
+    --white-600: #656565;
+    --white-700: #525252;
+    --white-800: #464646;
+    --white-900: #3d3d3d;
+    --white-950: #292929;
     --black: #141414;
 
-    /* Цвета (базовая палитра) */
+
 
     /* Шрифтовые семейства */
 
@@ -58,92 +64,18 @@
 
     /* Шкала кратная 4 */
 
-    /* Размер шрифтов */
+
 
     --fs-0: clamp(42px, 8vw, 80px);
-    --fs-1: clamp(28px, 5vw, 48px);  /* крупный заголовок */
-    --fs-2: clamp(22px, 3.2vw, 32px); /* подзаголовок */
-    --fs-3: clamp(18px, 2.4vw, 24px); /* h3 / крупный текст */
-    --fs-4: clamp(14px, 1.6vw, 16px); /* базовый текст */
-    --fs-5: clamp(12px, 1.2vw, 14px); /* мелкий текст */
+    --fs-1: clamp(28px, 5vw, 48px);
+    --fs-2: clamp(22px, 3.2vw, 32px);
+    --fs-3: clamp(18px, 2.4vw, 24px);
+    --fs-4: clamp(14px, 1.6vw, 16px);
+    --fs-5: clamp(12px, 1.2vw, 14px);
+    --fs-6: clamp(10px, 1vw, 12px);
+    --fs-7: clamp(8px, 0.8vw, 10px);
 
-     /* Размер шрифтов */
 
-     
+
+
 }
-
-.mt-0 { margin-top: var(--space-0); }
-.mb-0 { margin-bottom: var(--space-0); }
-
-.pt-0 { padding-top: var(--space-0); }
-.pb-0 { padding-bottom: var(--space-0); }
-
-.mt-2 { margin-top: var(--space-1); }
-.mb-2 { margin-bottom: var(--space-1); }
-
-.pt-2 { padding-top: var(--space-1); }
-.pb-2 { padding-bottom: var(--space-1); }
-
-.mt-3 { margin-top: var(--space-2); }
-.mb-3 { margin-bottom: var(--space-2); }
-
-.pt-3 { padding-top: var(--space-2); }
-.pb-3 { padding-bottom: var(--space-2); }
-
-.mt-4 { margin-top: var(--space-4); }
-.mb-4 { margin-bottom: var(--space-4); }
-
-.pt-4 { padding-top: var(--space-4); }
-.pb-4 { padding-bottom: var(--space-4); }
-
-.pt-5 { padding-top: var(--space-5); }
-.pb-5 { padding-bottom: var(--space-5); }
-
-.mt-5 { margin-top: var(--space-5); }
-.mb-5 { margin-bottom: var(--space-5); }
-
-.mt-6 { margin-top: var(--space-6); }
-.mb-6 { margin-bottom: var(--space-6); }
-
-.pt-6 { padding-top: var(--space-6); }
-.pb-6 { padding-bottom: var(--space-6); }
-
-.mt-7 { margin-top: var(--space-7); }
-.mb-7 { margin-bottom: var(--space-7); }
-
-.pt-7 { padding-top: var(--space-7); }
-.pb-7 { padding-bottom: var(--space-7); }
-
-.mt-8 { margin-top: var(--space-8); }
-.mb-8 { margin-bottom: var(--space-8); }
-
-.pt-8 { padding-top: var(--space-8); }
-.pb-8 { padding-bottom: var(--space-8); }
-
-.mt-9 { margin-top: var(--space-9); }
-.mb-9 { margin-bottom: var(--space-9); }
-
-.pt-9 { padding-top: var(--space-9); }
-.pb-9 { padding-bottom: var(--space-9); }
-
-.left-align {
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-}
-
-.right-align {
-    display: flex;
-    flex-direction: column;
-    align-items: end;
-}
-
-.center-align {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-
-
-

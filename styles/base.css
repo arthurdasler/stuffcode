@@ -2,7 +2,7 @@
 
 @font-face {
     font-family: 'Stuff Spec';
-    src: url('../fonts/Stuff-spec.woff') format('woff');
+    src: url('/fonts/Stuff-spec.woff') format('woff');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -20,32 +20,44 @@ body {
     line-height: 1.5;
 }
 
-/* Заголовки */
+
 
 h1 {
     font-size: var(--fs-1);
     margin: 0;
+    margin-bottom: var(--space-4);
+    line-height: 1;
+}
+
+.--spec {
+    font-family: 'Stuff Spec';
+    font-weight: 300;
 }
 
 h2 {
     font-size: var(--fs-2);
     margin: 0;
+    line-height: 1;
 }
 
 h3 {
     font-size: var(--fs-3);
     margin: 0;
+    line-height: 1.1;
 }
 
-.spec {
-    font-family: 'stuff spec';
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-    line-height: 1;
+
+
+blockquote {
+    margin-top: var(--space-2);
+    margin-bottom: var(--space-2);
+    margin-left: 0;
+    padding: var(--space-3);
+    background-color: var(--white-100);
+    border-radius: 10px;
 }
 
-/* Текст */
+
 
 p {
     font-size: var(--fs-4);
@@ -57,7 +69,7 @@ p {
     font-style: mono;
 }
 
-/* Ссылки */
+
 
 a {
     color: var(--black);
@@ -78,7 +90,7 @@ code {
 }
 
 .p-min {
-    font-size: var(--fs-5);
+    font-size: var(--fs-6);
     color: var(--black);
     opacity: 0.7;
 }
@@ -96,9 +108,16 @@ mark {
 }
 
 hr {
-    border: none;
-    border-top: 1px solid var(--white-200);
-    width: 100%;
+    border-right-width: initial;
+    border-bottom-width: initial;
+    border-left-width: initial;
+    border-right-color: initial;
+    border-bottom-color: initial;
+    border-left-color: initial;
+    width: 99%;
+    border-style: none none none;
+    border-image: initial;
+    border-top: 1px solid var(--white-300);
 }
 
 /* Изображения */

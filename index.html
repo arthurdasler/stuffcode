@@ -9,358 +9,336 @@
 
     <link rel="stylesheet" href="styles/tokens.css" />
     <link rel="stylesheet" href="styles/base.css" />
-    <link rel="stylesheet" href="styles/layout.css" />
+    <link rel="stylesheet" href="styles/utilities.css" />
     <link rel="stylesheet" href="styles/components.css" />
-    <link rel="stylesheet" href="styles/local.css" />
 
 </head>
 
 <body>
 
 
-    <div class="wrapper-full" style="display: flex; justify-content: space-between;">
-        <h1 style="rotate: 1.1deg;">STUFFCODE ©</h1>
-        <p> сделано от<a href="http://borsokov.ru" class="btn btn--text" target="_blank"> borsokov.ru </a></p>
+
+    <div class="stack-h jc-between ai-start wrap mb-2 padding-2">
+        <div class="stack-v no-wrap">
+            <h3 class="no-wrap"> STUFFCODE ©</h3>
+            <p class="p-min mt-2"> tailwind'ed framework</p>
+            <p class="p-min"> for Arthur stuff projects</p>
+        </div>
+        <div class="stack-v ai-end xs:hidden">
+            <p class="p-min">Построено с ❤️</p>
+            <p class="p-min">Сделано для себя</p>
+        </div>
     </div>
 
     <hr>
 
-    <div class="wrapper-standart" id="about">
-        <div class="mt-6">
-            <p> STUFFCODE &copy;&nbsp;&mdash; верхнеуровневая дизайн-система для вёрстки лендингов и&nbsp;небольших
-                цифровых продуктов бренда
-                ARTHUR STUFF. Я&nbsp;развиваю её&nbsp;под свои задачи и&nbsp;логику работы, не&nbsp;пытаясь создать
-                &laquo;универсальный
-                инструмент на&nbsp;все случаи жизни&raquo;.</p>
-            <p class="mt-4 ">
-                Фактически, это мини-фреймворк на&nbsp;чистом HTML+CSS. Я&nbsp;называю систему верхнеуровневой, так как
-                здесь нет тяжелых компонентов, сложной автоматизации или запутанной JS-логики. Всё строится вокруг
-                простых и&nbsp;понятных примитивов.
+    <div class="maxw-lg mx-auto padding-2 mt-6">
+        <div id="about">
+            <p>STUFFCODE © — мини-фрейморк-тейлвинд-дизайн-система.<br>А если простым языком – это дизайн-система с
+                утилитным подходом к верстке.
             </p>
-        </div>
-    </div>
-
-    <div class=" wrapper-standart mt-9" id="start">
-
-        <h1 class="spec" style="font-size: var(--fs-0);">
-            Начало работы <br> с системой
-        </h1>
-        <p class="mt-4">
-            Начать проект на&nbsp;STUFFCODE &copy;&nbsp;легко&nbsp;&mdash; достаточно просто подключить зависимости. Так
-            как в&nbsp;базе лежат простые решения, зависимости представляют собой набор подготовленных CSS-файлов
-            и&nbsp;несколько JS-скриптов.
-        </p>
-        <h3 class="mt-6">Структура системы</h3>
-
-        <div class="mt-4" style="display: flex; flex-direction: row; gap: 10px;">
-            <img src="img/folder-icon.svg" alt="folder-icon">
-            <p> project </p>
-        </div>
-
-        <div class="mt-4" style="display: flex; flex-direction: row; gap: 10px;">
-            <img style="padding-left: var(--space-6);" src="img/file-doc-icon.svg" alt="folder-icon">
-            <p> index.html </p>
-        </div>
-
-        <div class="mt-4" style="display: flex; flex-direction: row; gap: 10px;">
-            <img style="padding-left: var(--space-6);" src="img/folder-icon.svg" alt="folder-icon">
-            <p> fonts </p>
-        </div>
-
-        <div class="mt-4" style="display: flex; flex-direction: row; gap: 10px;">
-            <img style="padding-left: var(--space-6);" src="img/folder-icon.svg" alt="folder-icon">
-            <p> img </p>
-        </div>
-
-        <div class="mt-4" style="display: flex; flex-direction: row; gap: 10px;">
-            <img style="padding-left: var(--space-6);" src="img/folder-icon.svg" alt="folder-icon">
-            <p> styles </p>
-        </div>
-
-        <div class="mt-4" style="display: flex; flex-direction: row; gap: 10px;">
-            <img style="padding-left: var(--space-8); " src="img/file-doc-icon.svg" alt="folder-icon">
-            <p> tokens.css </p>
-        </div>
-
-        <div class="mt-4" style="display: flex; flex-direction: row; gap: 10px;">
-            <img style="padding-left: var(--space-8); " src="img/file-doc-icon.svg" alt="folder-icon">
-            <p> base.css </p>
-        </div>
-
-        <div class="mt-4" style="display: flex; flex-direction: row; gap: 10px;">
-            <img style="padding-left: var(--space-8); " src="img/file-doc-icon.svg" alt="folder-icon">
-            <p> layout.css </p>
-        </div>
-
-        <div class="mt-4" style="display: flex; flex-direction: row; gap: 10px;">
-            <img style="padding-left: var(--space-8); " src="img/file-doc-icon.svg" alt="folder-icon">
-            <p> components.css </p>
-        </div>
-
-        <div class="mt-4" style="display: flex; flex-direction: row; gap: 10px;">
-            <img style="padding-left: var(--space-8); " src="img/file-doc-icon.svg" alt="folder-icon">
-            <p> local.css </p>
-        </div>
-
-
-    </div>
-
-    <div class=" wrapper-standart mt-9" id="tokens">
-
-        <h1 class="spec" style="font-size: var(--fs-0);">
-            Токены
-        </h1>
-        <p class="mt-4">
-            Фундамент системы&nbsp;&mdash; токены. Это минимальный набор переменных в&nbsp;файле
-            <code>tokens.css</code>, который
-            задаёт ритм всей вёрстке. По&nbsp;сути, это слой настроек, на&nbsp;который опираются все остальные стили.
-        </p>
-        </p>
-
-        <div>
-            <h3 class="mt-6 mb-3">Цвета</h3>
-            <p>Управляются токенами <code>--white</code> <code>--blue</code> <code>--orange</code></p>
-            <p>Название цветов семантическое, чтобы не привязываться к функциям и компонентам</p>
-        </div>
-    </div>
-
-    <div id="color-scheme">
-        <div id="white-color">
-            <div class="wrapper-full" style="background-color: var(--white-50);">
-                <p class="p-min">--white-50</p>
-            </div>
-            <div class="wrapper-full" style="background-color: var(--white-100);">
-                <p class="p-min">--white-100</p>
-            </div>
-            <div class="wrapper-full" style="background-color: var(--white-200);">
-                <p class="p-min">--white-200</p>
-            </div>
-            <div class="wrapper-full" style="background-color: var(--white-300);">
-                <p class="p-min">--white-300</p>
-            </div>
-            <div class="wrapper-full" style="background-color: var(--white-400);">
-                <p class="p-min">--white-400</p>
-            </div>
-            <div class="wrapper-full" style="background-color: var(--white-500);">
-                <p class="p-min">--white-500</p>
-            </div>
-        </div>
-        <div id="blue-color">
-            <div class="wrapper-full" style="background-color: var(--blue-50);">
-                <p class="p-min">--blue-50</p>
-            </div>
-            <div class="wrapper-full" style="background-color: var(--blue-100);">
-                <p class="p-min">--blue-100</p>
-            </div>
-            <div class="wrapper-full" style="background-color: var(--blue-200);">
-                <p class="p-min">--blue-200</p>
-            </div>
-            <div class="wrapper-full" style="background-color: var(--blue-300);">
-                <p class="p-min">--blue-300</p>
-            </div>
-            <div class="wrapper-full" style="background-color: var(--blue-400);">
-                <p class="p-min">--blue-400</p>
-            </div>
-            <div class="wrapper-full" style="background-color: var(--blue-500);">
-                <p class="p-min">--blue-500</p>
-            </div>
-        </div>
-        <div id="orange-color">
-            <div class="wrapper-full" style="background-color: var(--orange-50);">
-                <p class="p-min">--orange-50</p>
-            </div>
-            <div class="wrapper-full" style="background-color: var(--orange-100);">
-                <p class="p-min">--orange-100</p>
-            </div>
-            <div class="wrapper-full" style="background-color: var(--orange-200);">
-                <p class="p-min">--orange-200</p>
-            </div>
-            <div class="wrapper-full" style="background-color: var(--orange-300);">
-                <p class="p-min">--orange-300</p>
-            </div>
-            <div class="wrapper-full" style="background-color: var(--orange-400);">
-                <p class="p-min">--orange-400</p>
-            </div>
-            <div class="wrapper-full" style="background-color: var(--orange-500);">
-                <p class="p-min">--orange-500</p>
-            </div>
-            <div class="wrapper-full" style="background-color: var(--orange-600);">
-                <p class="p-min">--orange-600</p>
-            </div>
-        </div>
-    </div>
-
-    <div class="wrapper-standart" id="tokens">
-        <div>
-            <h3 class="mt-6 mb-3">Спейсы</h3>
-            <p class="mb-4">Управляются токеном <code>--space</code> <br>Собраны в единую линейку: кратность 4px, от 0
-                до 80px. Это держит вертикальный и
-                горизонтальный
-                ритм и не даёт лендингу развалиться на набор несогласованных блоков</p>
-            <code>--space-0</code> ... <code>--space-9</code>
-        </div>
-
-        <div>
-            <h3 class="mt-6 mb-3">Размерности шрифтов</h3>
-            <p class="mb-4">Управляются токеном <code>--fs</code><br>Крупные, средние, базовые — каждый уровень живёт в
-                своём токене и адаптируется через
-                <code>clamp(...)</code>, чтобы нормально вести себя на разных экранах
+            <p>Фактически, это мини-фреймворк на чистом HTML+CSS основанный на принципах tailwind. Здесь нет
+                тяжелых компонентов, сложной автоматизации или запутанной JS-логики. Всё строится на простых и
+                понятных принципах
             </p>
-        </div>
 
-        <div>
-            <h3 class="mt-6 mb-3">Отступы</h3>
-            <p class="mb-4">Чтобы не прописывать марджины и паддинги вручную, в системе предусмотрен набор
-                утилитарных классов <code>mt</code> <code>mb</code> <code>pt</code> <code>pb</code></p>
-            <p>Принцип простой:</p>
-            <p class="mt-4"><code>pt-4</code> значит padding-top = значение токена <code>space-4</code></p>
-            <p class="mt-4"><code>mb-4</code> значит margin-bottom = значение токена <code>space-4</code></p>
-        </div>
-
-        <div>
-            <h3 class="mt-6 mb-3">Утилиты для выравнивания</h3>
-            <p class="mb-4">Эти утилиты предназначены в&nbsp;первую очередь для врапперов.
-                Они включают flex-режим и&nbsp;задают своё выравнивание, поэтому при использовании внутри сложных
-                компонентов могут вмешиваться &nbsp;и&nbsp;ломать внутреннюю логику.
-            </p>
-            <p class="mb-4"><code>.left-align</code> выравнивает содержимое по левому краю</p>
-            <p class="mb-4"><code>.right-align</code> выравнивает содержимое по правому краю</p>
-            <p class="mb-4"><code>.center-align</code> выравнивает содержимое по центру</p>
-
-
-        </div>
-
-    </div>
-
-    <div class="wrapper-standart mt-9" id="baza">
-        <h1 class="spec" style="font-size: var(--fs-0);">База</h1>
-        <p class="mt-4"> Следующий стилевой слой: базовый</p>
-        <p> Этот слой управляет всей типографикой в системе на основе токенов</p>
-        <p> Так же в этом слое удобно подключать кастомные шрифты</p>
-        <p> Всей базой управляет <code>base.css</code></p>
-
-        <div>
-            <h3 class="mt-6">Типографика</h3>
-            <div class="mt-4" style="display: flex; flex-direction: column; gap: 10px;">
-                <code> h1 </code>
-                <h1>Заголовки первого уровня</h1>
-                <hr>
-                <code> h2 </code>
-                <h2> Заголовки второго уровня</h2>
-                <hr>
-                <code> h3 </code>
-                <h3> Заголовки третьего уровня</h3>
-                <hr>
-                <code> p </code>
-                <p> Обычный текст для параграфов </p>
-                <hr>
-                <code> strong </code>
-                <strong> Жирный текст </strong>
-
-                <p class="mt-8">Существует дополнительный класс для заголовков <code>spec</code>
-                    <br> Он меняет стандартную гарнитуру на любую другую и увеличивает размер
+            <blockquote class="mt-6">
+                <h3>
+                    Зачем это нужно?
+                </h3>
+                <p class="mt-4">
+                    Затем, что это упрощает «старт» проекта.
+                    <br> Проблема «коробочного» tailwind в том, что его делали для разработки, а не для дизайна. Поэтому
+                    из
+                    коробки tailwind содержит все, что нужно, и все, что не нужно.
                 </p>
-                <hr>
-                <code> h1.spec</code>
-                <h1 class="spec">Заголовки первого уровня</h1>
-                <hr>
-                <code> h2.spec </code>
-                <h2 class="spec"> Заголовки второго уровня</h2>
-                <hr>
-                <code> h3.spec </code>
-                <h3 class="spec"> Заголовки третьего уровня</h3>
+                <p>STUFFCODE © по своей сути – упрощенный tailwind для проектов в рамках бренда Arthur
+                    stuff. Его проще читать, писать, рефакторить.
+                    Так же STUFFCODE © заранее содержит набор базовых компонентов: кнопки, инпуты, навбары, бейджи.</p>
+            </blockquote>
 
-
-
-                <p class="mt-8"> В добавок ко всему в дизайн-системе предусмотрены кастомные текстовые классы:</p>
-                <hr>
-                <code> p-min </code>
-                <p class="p-min"> мини-текст он же caption </p>
-                <hr>
-                <code> p-up </code>
-                <p class="p-up"> Uppercase </p>
-                <hr>
-                <code> mark </code>
-                <mark> Курсивный текст </mark>
-            </div>
         </div>
-    </div>
 
-    <div id="layout">
-        <div class="wrapper-standart mt-9">
-            <h1 class="spec" style="font-size: var(--fs-0);">Лейаут</h1>
-            <p class="mt-4"> В&nbsp;STUFFCODE &copy;&nbsp;нет переусложненных сущностей. Архитектура делится
-                на&nbsp;уровни: сейчас их&nbsp;два, но&nbsp;система позволяет легко масштабировать структуру при
-                необходимости.
+        <div class="mt-9" id="start">
+            <h1>Начало работы <br> с системой </h1>
+            <p>
+                Начать проект на STUFFCODE © легко — достаточно просто подключить зависимости. Так как в базе лежат
+                простые
+                решения, зависимости представляют собой набор подготовленных CSS-файлов и несколько JS-скриптов.
             </p>
-        </div>
-        <div class="wrapper-standart mt-6">
-            <p><code>wrapper-full</code> – уровень, занимающий всю ширину экрана</p>
-        </div>
-        <div class="wrapper-full"
-            style="border-radius: 8px; height: 300px; background-color: rgba(232, 232, 232, 0.386);">
-            Пример
-            wrapper-full
-        </div>
-        <div class="wrapper-standart mt-6">
-            <p> <code>wrapper-standart</code> – стандартный уровень. На мобиле занимает всю ширину</p>
-        </div>
-        <div class="wrapper-standart"
-            style="border-radius: 8px; height: 300px; background-color: rgba(232, 232, 232, 0.386);"> Пример
-            wrapper-standart</div>
-        <div class="wrapper-standart mt-6">
-            <p> <code>wrapper-column</code> – двухколоночный этаж. Объекты кладутся внутрь каждой columns</p>
-            <p> В мобильной версии стеки пока что нет</p>
-        </div>
-        <div class="wrapper-column">
-            <div class="item-column"
-                style="border-radius: 8px; height: 300px; background-color: rgba(232, 232, 232, 0.386);">
-                <p> Пример column</p>
-            </div>
-            <div class="item-column"
-                style="border-radius: 8px; height: 300px; background-color: rgba(232, 232, 232, 0.386);">
-                <p> Пример column</p>
-            </div>
-        </div>
-        <div class="wrapper-standart mt-6">
-            <p> <code>wrapper-grid</code> – сетка для каталога, порфтолио или других элементов.
-                <br> Размер ячеек управляется компонентом который лежит внутри <code>item-grid</code>
-            </p>
-        </div>
-        <div class="wrapper-grid">
-            <div class="item-grid">
-                <img src="img/item-template.png">
-            </div>
-            <div class="item-grid">
-                <img src="img/item-template.png">
-            </div>
-            <div class="item-grid">
-                <img src="img/item-template.png">
-            </div>
-            <div class="item-grid">
-                <img src="img/item-template.png">
-            </div>
-        </div>
-    </div>
+            <h3 class="mt-6">Структура системы</h3>
 
-    <div id="components">
-        <div class="wrapper-standart mt-9">
-            <h1 class="spec" style="font-size: var(--fs-0);">Компоненты</h1>
-            <p class="mt-4">Обязательные элементы без которых никуда не дется в 90% случаев:</p>
-            <p>Кнопки, инпуты, навбар и так далее</p>
-            <p>Все компоненты управляются в <code>components.css</code></p>
+            <div class="mt-4 stack-h gap-2">
+                <img src="img/folder-icon.svg" alt="folder-icon">
+                <p> project </p>
+            </div>
+
+            <div class="mt-4 stack-h gap-2" style="padding-left: var(--space-6);">
+                <img src="img/file-doc-icon.svg" alt="folder-icon">
+                <p> index.html </p>
+            </div>
+
+            <div class="mt-4 stack-h gap-2" style="padding-left: var(--space-6);">
+                <img src="img/folder-icon.svg" alt="folder-icon">
+                <p> img </p>
+            </div>
+
+            <div class="mt-4 stack-h gap-2" style="padding-left: var(--space-6);">
+                <img src="img/folder-icon.svg" alt="folder-icon">
+                <p> fonts </p>
+            </div>
+
+            <div class="mt-4 stack-h gap-2" style="padding-left: var(--space-6);">
+                <img src="img/folder-icon.svg" alt="folder-icon">
+                <p> styles </p>
+            </div>
+
+            <div class="mt-4 stack-h gap-2" style="padding-left: var(--space-8);">
+                <img src="img/file-doc-icon.svg" alt="folder-icon">
+                <p> tokens.css </p>
+            </div>
+
+            <div class="mt-4 stack-h gap-2" style="padding-left: var(--space-8);">
+                <img src="img/file-doc-icon.svg" alt="folder-icon">
+                <p> utilities.css </p>
+            </div>
+
+            <div class="mt-4 stack-h gap-2" style="padding-left: var(--space-8);">
+                <img src="img/file-doc-icon.svg" alt="folder-icon">
+                <p> base.css </p>
+            </div>
 
 
-            <div>
-                <h3 class="mt-6 mb-3">Кнопки</h3>
-                <p>Это небольшой набор предсказуемых стилей. все они собраны на базе общего класса <code>.btn</code></p>
-                <p class="mt-4">Главное правило — кнопка всегда состоит из двух частей:</p>
-                <li class="mt-3">базовый стиль <code>.btn</code></li>
-                <li class="mt-3">и модификатор, который задаёт поведение <code>--primary</code>,
-                    <code>--secondary</code>, <code>--icon</code> и т.д.
-                </li>
+        </div>
 
-                <div class="mt-6 mb-6" >
+
+
+        <div id="tokens">
+            <div class="mt-9">
+                <h1>Токены</h1>
+                <p class="mt-4">
+                    Фундамент системы&nbsp;&mdash; токены. Это минимальный набор переменных в&nbsp;файле
+                    <code>tokens.css</code>, который
+                    задаёт ритм всей вёрстке. По&nbsp;сути, это слой настроек, на&nbsp;который опираются все остальные
+                    стили.
+                </p>
+            </div>
+            <div class="mt-7">
+                <h3>Цвета</h3>
+                <p class="mt-3">Разные оттенки и акцентные цвета. Наименовавания семантические – можно свободно выбирать
+                    внезависимости
+                    от элемента, к которому цвет применен.</p>
+                <div class="stack-h gap-2 ai-center mt-4 mb-2 padding-2" style="width: fit-content;">
+                    <img src="img/info_24dp.svg">
+                    <p class="p-min">После редактирования лучше перепроверить зависимости</p>
+                </div>
+                <div class="mt-4 stack-h jc-between">
+                    <p>--primary</p>
+                    <p> ... </p>
+                    <p>--primary-600</p>
+                </div>
+                <hr>
+                <div class="mt-4 stack-h jc-between">
+                    <p>--secondary</p>
+                    <p> ... </p>
+                    <p>--secondary-600</p>
+                </div>
+                <hr>
+                <div class="mt-4 stack-h jc-between">
+                    <p>--white</p>
+                    <p> ... </p>
+                    <p>--white-600</p>
+                </div>
+                <hr>
+            </div>
+
+            <div class="mt-7">
+                <h3>Спейсы</h3>
+                <p class="mt-3">Управляются токеном <code>--space</code> <br>Собраны в единую линейку: кратность 4px, от
+                    0
+                    до 80px. Это держит вертикальный и
+                    горизонтальный
+                    ритм и не даёт лендингу развалиться на набор несогласованных блоков</p>
+                <code>--space-0</code> ... <code>--space-9</code>
+            </div>
+
+            <div class="mt-7">
+                <h3>Размерности шрифтов</h3>
+                <p class="mt-3">Управляются токеном <code>--fs</code><br>Крупные, средние, базовые — каждый уровень
+                    живёт в
+                    своём токене и адаптируется через
+                    <code>clamp(...)</code>, чтобы нормально вести себя на разных экранах
+                </p>
+            </div>
+
+
+            <div class="mt-7">
+                <h3>Отступы</h3>
+                <p class="mt-3">Чтобы не прописывать марджины и паддинги вручную, в системе предусмотрен набор
+                    утилитарных классов <code>mt</code> <code>mb</code> <code>pt</code> <code>pb</code></p>
+                <p>Принцип простой:</p>
+                <p class="mt-4"><code>pt-4</code> значит padding-top = значение токена <code>space-4</code></p>
+                <p class="mt-4"><code>mb-4</code> значит margin-bottom = значение токена <code>space-4</code></p>
+            </div>
+        </div>
+
+        <div id="utilities">
+            <div class="mt-9">
+                <h1>Утилиты</h1>
+                <div class="stack-h gap-2 mt-4 ai-start">
+                    <img src="img/info_24dp.svg">
+                    <p class="p-min">Полный список утилит может не&nbsp;совпадать с&nbsp;актуальным списком.<br>Это
+                        ознакомительная
+                        документация, а&nbsp;не&nbsp;техническая</p>
+                </div>
+            </div>
+
+            <blockquote class="mt-4" id="utilities">
+
+
+                <div>
+                    <div class="stack-v gap-2 ">
+                        <h3> Margin and Padding Utilities </h3>
+                        <p>Разные утилиты для настроек марджинов и паддингов</p>
+                        <p>
+                            <code>pt-2</code>
+                            <code>mb-6</code>
+                            <code>mb-6</code>
+                            <code>padding-3</code>
+                        </p>
+
+                    </div>
+
+                    <div class="stack-v gap-2 mt-7">
+                        <h3> Width/Height Utilities </h3>
+                        <p> Ширина и высота на 100%</p>
+                        <p>
+                            <code>w-full</code>
+                            <code>h-full</code>
+                        </p>
+                        <p class="mt-4"> Максимальная ширина контейнера на 480, 720, 960, 1200 пикселей</p>
+                        <p>
+                            <code>maxw-sm</code>
+                            <code>maxw-md</code>
+                            <code>maxw-lg</code>
+                            <code>maxw-xl</code>
+                        </p>
+                        <p class="mt-4"> Центрирование контейнера по ширине</p>
+                        <p>
+                            <code>mx-auto</code>
+                        </p>
+                    </div>
+                </div>
+
+
+                <div class="stack-v gap-2 mt-7">
+                    <h3> Stack Utilities </h3>
+                    <p> Он же flex-direction:</p>
+                    <p>
+                        <code>stack-v</code>
+                        <code>stack-h</code>
+                    </p>
+                </div>
+
+
+                <div class="stack-v gap-2 mt-7">
+                    <h3> Justify Utilities </h3>
+                    <p> Он же justify-content:</p>
+                    <p>
+                        <code>jc-start</code>
+                        <code>jc-center</code>
+                        <code>jc-end</code>
+                        <code>jc-between</code>
+                    </p>
+                </div>
+
+
+                <div class="stack-v gap-2 mt-7">
+                    <h3> Align Utilities </h3>
+                    <p> Он же align-items:</p>
+                    <p>
+                        <code>ai-start</code>
+                        <code>ai-center</code>
+                        <code>ai-end</code>
+                    </p>
+                </div>
+
+
+
+
+                <div class="stack-v gap-2 mt-7">
+                    <h3> Hidden Utilities </h3>
+                    <p> Утилита для скрытия элементов при определенных размерах вьюпорта</p>
+                    <p>
+                        <code>md:hidden</code>
+                        <code>sm:hidden</code>
+                        <code>xs:hidden</code>
+                    </p>
+                </div>
+
+
+            </blockquote>
+        </div>
+
+        <div id="base">
+            <div class="mt-9">
+                <h1>База</h1>
+                <p class="mt-4">Полный список утилит может не&nbsp;совпадать с&nbsp;актуальным списком.<br>Это
+                    ознакомительная
+                    документация, а&nbsp;не&nbsp;техническая</p>
+            </div>
+
+            <div id="type">
+                <h3 class="mt-6">Типографика</h3>
+                <div class="mt-4" style="display: flex; flex-direction: column; gap: 10px;">
+                    <code> h1 </code>
+                    <h1>Заголовки первого уровня</h1>
+                    <hr>
+                    <code> h2 </code>
+                    <h2> Заголовки второго уровня</h2>
+                    <hr>
+                    <code> h3 </code>
+                    <h3> Заголовки третьего уровня</h3>
+                    <hr>
+                    <code> p </code>
+                    <p> Обычный текст для параграфов </p>
+                    <hr>
+                    <code> strong </code>
+                    <strong> Жирный текст </strong>
+
+                    <p class="mt-7"> В добавок ко всему в дизайн-системе предусмотрены кастомные текстовые классы:</p>
+                    <hr>
+                    <code> p-min </code>
+                    <p class="p-min"> мини-текст он же caption </p>
+                    <hr>
+                    <code> p-up </code>
+                    <p class="p-up"> Uppercase </p>
+                    <hr>
+                    <code> mark </code>
+                    <mark> Курсивный текст </mark>
+                </div>
+            </div>
+
+
+
+        </div>
+
+        <div id="components">
+            <div class="mt-9">
+                <h1>Компоненты</h1>
+                <p class="mt-4">Обязательные элементы без которых никуда не дется в 90% случаев:</p>
+                <p>Кнопки, инпуты, навбар и так далее</p>
+                <p>Все компоненты управляются в <code>components.css</code></p>
+            </div>
+
+            <div class="mt-7">
+                <h3>Кнопки</h3>
+                <p class="mt-3 mb-3">Все кнопки состоят из двух элементов: </p>
+                <p class="mb-3"> <code>btn</code> – основной стилеобразующий элемент </p>
+                <p> <code>btn--primary</code><code>btn--secondary</code><code>btn--icon</code> – основной
+                    стилеобразующий элемент </p>
+
+                <div class="w-full stack-h jc-start ai-center mt-6 mb-6 gap-2" style="flex-wrap: wrap;">
                     <a class="btn btn--primary" href="http://example.com" target="_blank"> Оформить заявку</a>
                     <a class="btn btn--secondary" href="http://example.com" target="_blank"> Купить</a>
                     <a class="btn btn--invis" href="http://example.com" target="_blank"> Оформить заявку</a>
@@ -369,99 +347,50 @@
                     <a class="btn btn--icon" href="http://example.com" target="_blank"> <img
                             src="img/icon-plus.svg"></a>
                 </div>
-
-                <hr>
-
-                <h3 class="mt-6 mb-3">Бейджи</h3>
-                <p>Работают по тому же принципу, что и кнопки:</p>
-                <p>есть базовый класс <code>.badge</code> и модификаторы для поведения.</p>
-                <div class="mt-4 mb-6" style="display: flex; align-items: center; gap: 10px;">
-                    <div class="badge badge--primary">Новый</div>
-                    <div class="badge badge--secondary"> Продано</div>
-                    <div class="badge badge--invis"> Осталось 3</div>
-                </div>
-
-                <hr>
-
-                <h3 class="mt-6 mb-3">Навбар</h3>
-                <p> Маленькая панель для навигации. Никаких сложных сценариев: просто горизонтальный контейнер,
-                    в&nbsp;который можно положить ссылки, кнопки или любые другие элементы.</p>
-                <p> Сам навбар состоит из двух элементов:</p>
-                <p class="mt-6"> <code>.nav-bar</code> и <code>.nav-bar-inner</code></p>
-                <p class="mt-6"><code>.nav-bar</code> – задает положение панели на экране.</p>
-                <p class="mt-4"><code>.nav-bar-inner</code> – служит самим контейнером.</p>
-                <p class="mt-4">Можно задать кастомно расположение через <code>style</code></p>
-                <div class="nav-bar-inner mt-6 mb-6" style="width: fit-content;">
-                    <a class="btn btn--text" href="example.com" target="_blank"> Каталог </a>
-                    <a class="btn btn--text" href="example.com" target="_blank"> О проекте </a>
-                    <a class="btn btn--text" href="example.com" target="_blank"> Контакты </a>
-                    <a class="btn btn--primary" style="border-radius: 100px;" href="example.com"
-                        target="_blank">Кнопка</a>
-                </div>
-
-
-                <div class="nav-bar" style="bottom: 0; display: none;">
-                    <div class="nav-bar-inner">
-                        <a class="btn btn--text" href="example.com" target="_blank"> Каталог </a>
-                        <a class="btn btn--text" href="example.com" target="_blank"> О проекте </a>
-                        <a class="btn btn--text" href="example.com" target="_blank"> Контакты </a>
-                        <a class="btn btn--primary" style="border-radius: 100px;" href="example.com" target="_blank">
-                            Кнопка</a>
-                    </div>
-                </div>
-
-                <hr>
-
-                <h3 class="mt-6 mb-3">Инпуты</h3>
-                <p> Инпут в&nbsp;STUFFCODE &copy;&nbsp;всего один.
-                    Я&nbsp;не&nbsp;размножаю варианты&nbsp;&mdash; просто сделал универсальное поле, которое нормально
-                    ведёт себя в&nbsp;любом
-                    окружении. Никакой декоративности, только чистая функциональность. Он&nbsp;занимает всю ширину
-                    контейнера.</p>
-                <div class="field mt-6">
-                    <label class="field__label" for="email">Email</label>
-                    <p class="field__description">Используется в формах, подписках и любых простых сценариях.</p>
-                    <input class="input" type="email" id="email" name="email" placeholder="name@example.com">
-                </div>
-
             </div>
+
+
+
+            <div class="mt-7 mb-7">
+                <h3>Инпут</h3>
+                <p class="mt-3 mb-3">Компонент инпута в STUFFCODE © всего один. Подойдет для большинства сценариев </p>
+
+                <div class="input">
+                    <input class="input--field" type="email" placeholder="name@example.com">
+                    <button class="btn btn--primary" type="button">Отправить</button>
+                </div>
+            </div>
+
+
+            <div class="mt-9 mb-7 stack-v ai-center gap-2" id="WIP">
+                <h1 class="--spec">
+                    Always W.I.P
+                </h1>
+                <p style="text-align: center;">
+                    Это не финальный продукт и, возможно, таким никогда не станет.
+                </p>
+
+                <p style="text-align: center;">
+                    Так что если заметите шероховатости — это нормально 
+                </p>
+            </div>
+
+
+
         </div>
+
+
     </div>
 
-    <div id="WIP">
-        <div class="wrapper-standart mt-9 mb-4 center-align" style="text-align: center;">
-            <h1 class="spec mb-4">Always W.I.P.</h1>
-            <p>Система постоянно в&nbsp;движении. Я&nbsp;что-то меняю, дорабатываю, вычищаю или переписываю, когда вижу
-                в&nbsp;этом смысл. Это не&nbsp;финальный продукт&nbsp;и, возможно, таким никогда не&nbsp;станет.
-            </p>
-            <p class="mt-4">
-                Так что
-                если заметите шероховатости&nbsp;&mdash; это нормально
-            </p>
-        </div>
+    <div class="stack-h jc-between padding-3">
+        <p class="p-min" id="uptime">dsadsa</p>
+        <p class="p-min" >created by borsokov.ru</p>
     </div>
-
-
-
-    <div class="wrapper-column mt-9 mb-4">
-        <div class="item-column left-align">
-            <p class="p-min" id="uptime"> </p>
-        </div>
-        <div class="item-column right-align">
-            <p class="p-min">created by <a class="text-link" href="https://borsokov.ru/">borsokov.ru</a> </p>
-            <p class="p-min mt-2">2025 ©</p>
-        </div>
-
-    </div>
-
-
-
-
-
 
 </body>
 
 <script>
+
   (function () {
     const el = document.getElementById('uptime');
     if (!el) return;
@@ -497,6 +426,7 @@
     updateUptime();
     setInterval(updateUptime, 60 * 1000);
   })();
+
 </script>
 
 
