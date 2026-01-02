@@ -55,7 +55,6 @@ blockquote {
     padding: var(--space-6);
     background-color: var(--white-100);
     border-radius: 10px;
-    width: 100%;
 }
 
 
