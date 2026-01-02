@@ -1,12 +1,5 @@
 /* базовая типографика, body, ссылки */
 
-@font-face {
-    font-family: 'Stuff Spec';
-    src: url('/fonts/Stuff-spec.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-}
 
 body {
     height: 100%;
@@ -29,10 +22,7 @@ h1 {
     line-height: 1;
 }
 
-.--spec {
-    font-family: 'Stuff Spec';
-    font-weight: 300;
-}
+
 
 h2 {
     font-size: var(--fs-2);
