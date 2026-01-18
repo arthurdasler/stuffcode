@@ -32,8 +32,17 @@
 
     <hr>
 
+
+
+
+
     <div class="maxw-lg mx-auto padding-2 mt-6">
-        <div id="about">
+
+        <div id="download">
+            <a class="btn btn--secondary" href="https://github.com/arthurdasler/stuffcode" target="_blank" >github</a>
+        </div>
+
+        <div id="about" class="mt-6">
             <p>STUFFCODE © — мини-фрейморк-тейлвинд-дизайн-система.<br>А если простым языком – это дизайн-система с
                 утилитным подходом к верстке.
             </p>
@@ -371,7 +380,7 @@
                 </p>
 
                 <p style="text-align: center;">
-                    Так что если заметите шероховатости — это нормально 
+                    Так что если заметите шероховатости — это нормально
                 </p>
             </div>
 
@@ -382,50 +391,52 @@
 
     </div>
 
+
+
     <div class="stack-h jc-between padding-3">
-        <p class="p-min" id="uptime">dsadsa</p>
-        <p class="p-min" >created by borsokov.ru</p>
+        <p class="p-min" id="uptime"></p>
+        <p class="p-min">created by borsokov.ru</p>
     </div>
 
 </body>
 
 <script>
 
-  (function () {
-    const el = document.getElementById('uptime');
-    if (!el) return;
+    (function () {
+        const el = document.getElementById('uptime');
+        if (!el) return;
 
-    const launchDate = new Date('2025-12-06T16:00:00Z'); 
+        const launchDate = new Date('2025-12-06T16:00:00Z');
 
-    function formatUptime(ms) {
-      const totalSeconds = Math.floor(ms / 1000);
-      const totalMinutes = Math.floor(totalSeconds / 60);
-      const totalHours = Math.floor(totalMinutes / 60);
-      const days = Math.floor(totalHours / 24);
-      const hours = totalHours % 24;
-      const minutes = totalMinutes % 60;
+        function formatUptime(ms) {
+            const totalSeconds = Math.floor(ms / 1000);
+            const totalMinutes = Math.floor(totalSeconds / 60);
+            const totalHours = Math.floor(totalMinutes / 60);
+            const days = Math.floor(totalHours / 24);
+            const hours = totalHours % 24;
+            const minutes = totalMinutes % 60;
 
-      const parts = [];
-      if (days > 0) parts.push(`${days}d`);
-      if (hours > 0 || days > 0) parts.push(`${hours}h`);
-      parts.push(`${minutes}m`);
+            const parts = [];
+            if (days > 0) parts.push(`${days}d`);
+            if (hours > 0 || days > 0) parts.push(`${hours}h`);
+            parts.push(`${minutes}m`);
 
-      return parts.join(' ');
-    }
+            return parts.join(' ');
+        }
 
-    function updateUptime() {
-      const now = new Date();
-      const diff = now - launchDate;
-      if (diff < 0) {
-        el.textContent = 'Uptime: 0m';
-        return;
-      }
-      el.textContent = 'Uptime: ' + formatUptime(diff);
-    }
+        function updateUptime() {
+            const now = new Date();
+            const diff = now - launchDate;
+            if (diff < 0) {
+                el.textContent = 'Uptime: 0m';
+                return;
+            }
+            el.textContent = 'Uptime: ' + formatUptime(diff);
+        }
 
-    updateUptime();
-    setInterval(updateUptime, 60 * 1000);
-  })();
+        updateUptime();
+        setInterval(updateUptime, 60 * 1000);
+    })();
 
 </script>
 
