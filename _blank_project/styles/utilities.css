@@ -1,0 +1,113 @@
+/* Stack Utilities */
+.stack-v { display: flex; flex-direction: column; }  /* вертикальный стек */
+.stack-h { display: flex; flex-direction: row; }     /* горизонтальный ряд */
+
+/* Justify Utilities */
+.jc-start   { justify-content: flex-start; }
+.jc-center  { justify-content: center; }
+.jc-end     { justify-content: flex-end; }
+.jc-between { justify-content: space-between; }
+
+/* Align Utilities */
+.ai-start   { align-items: flex-start; }
+.ai-center  { align-items: center; }
+.ai-end     { align-items: flex-end; }
+
+/* Width/Height Utilities */
+.w-full  { width: 100%; }
+.h-full  { height: 100%; }
+
+.min-h-screen { min-height: 100vh; }  /* “экранный” блок, hero и т.п. */
+
+.maxw-sm  { max-width: 480px; }
+.maxw-md  { max-width: 720px; }
+.maxw-lg  { max-width: 960px; }
+.maxw-xl  { max-width: 1200px; }
+
+.mx-auto { margin-left: auto; margin-right: auto; } /* центровка контейнера */
+
+/* Wrap Utilities */
+.wrap     { flex-wrap: wrap; }
+.no-wrap  { flex-wrap: nowrap; }
+
+/* Margin and Padding Utilities */
+.mt-0 {margin-top: var(--space-0);}
+.mb-0 {margin-bottom: var(--space-0);}
+.pt-0 {padding-top: var(--space-0);}
+.pb-0 {padding-bottom: var(--space-0);}
+.mt-2 {margin-top: var(--space-1);}
+.mb-2 {margin-bottom: var(--space-1);}
+.pt-2 {padding-top: var(--space-1);}
+.pb-2 {padding-bottom: var(--space-1);}
+.mt-3 {margin-top: var(--space-2);}
+.mb-3 {margin-bottom: var(--space-2);}
+.pt-3 {padding-top: var(--space-2);}
+.pb-3 {padding-bottom: var(--space-2);}
+.mt-4 {margin-top: var(--space-4);}
+.mb-4 {margin-bottom: var(--space-4);}
+.pt-4 {padding-top: var(--space-4);}
+.pb-4 {padding-bottom: var(--space-4);}
+.pt-5 {padding-top: var(--space-5);}
+.pb-5 {padding-bottom: var(--space-5);}
+.mt-5 {margin-top: var(--space-5);}
+.mb-5 {margin-bottom: var(--space-5);}
+.mt-6 {margin-top: var(--space-6);}
+.mb-6 {margin-bottom: var(--space-6);}
+.pt-6 {padding-top: var(--space-6);}
+.pb-6 {padding-bottom: var(--space-6);}
+.mt-7 {margin-top: var(--space-7);}
+.mb-7 {margin-bottom: var(--space-7);}
+.pt-7 {padding-top: var(--space-7);}
+.pb-7 {padding-bottom: var(--space-7);}
+.mt-8 {margin-top: var(--space-8);}
+.mb-8 {margin-bottom: var(--space-8);}
+.pt-8 {padding-top: var(--space-8);}
+.pb-8 {padding-bottom: var(--space-8);}
+.mt-9 {margin-top: var(--space-9);}
+.mb-9 {margin-bottom: var(--space-9);}
+.pt-9 {padding-top: var(--space-9);}
+.pb-9 {padding-bottom: var(--space-9);}
+
+/* Padding Utilities */
+.padding-0 {padding: var(--space-0);}
+.padding-1 {padding: var(--space-1);}
+.padding-2 {padding: var(--space-2);}
+.padding-3 {padding: var(--space-3);}
+.padding-4 {padding: var(--space-4);}
+.padding-5 {padding: var(--space-5);}
+.padding-6 {padding: var(--space-6);}
+.padding-7 {padding: var(--space-7);}
+.padding-8 {padding: var(--space-8);}
+.padding-9 {padding: var(--space-9);}
+
+/* Gap Utilities */
+.gap-0 {gap: var(--space-0);}
+.gap-1 {gap: var(--space-1);}
+.gap-2 {gap: var(--space-2);}
+.gap-3 {gap: var(--space-3);}
+.gap-4 {gap: var(--space-4);}
+
+
+/* Hidden utilities */
+.hidden {
+  display: none !important;
+}
+
+@media (max-width: 1199px) {
+  .md\:hidden {
+    display: none !important;
+  }
+}
+
+@media (max-width: 767px) {
+  .sm\:hidden {
+    display: none !important;
+  }
+}
+
+
+@media (max-width: 479px) {
+  .xs\:hidden {
+    display: none !important;
+  }
+}

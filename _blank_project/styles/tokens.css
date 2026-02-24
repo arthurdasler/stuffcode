@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root {
+
+
+    --primary: #FF6822;
+    --secondary: #407BF1;
+
+
+
+
+    --primary-50: color-mix(in srgb, var(--primary) 10%, white);
+    --primary-100: color-mix(in srgb, var(--primary) 25%, white);
+    --primary-200: color-mix(in srgb, var(--primary) 40%, white);
+    --primary-300: color-mix(in srgb, var(--primary) 60%, white);
+    --primary-400: color-mix(in srgb, var(--primary) 75%, white);
+    --primary-500: var(--primary);
+    --primary-600: color-mix(in srgb, var(--primary) 80%, black);
+
+
+    --secondary-50: color-mix(in srgb, var(--secondary) 10%, white);
+    --secondary-100: color-mix(in srgb, var(--secondary) 25%, white);
+    --secondary-200: color-mix(in srgb, var(--secondary) 40%, white);
+    --secondary-300: color-mix(in srgb, var(--secondary) 60%, white);
+    --secondary-400: color-mix(in srgb, var(--secondary) 75%, white);
+    --secondary-500: var(--secondary);
+    --secondary-600: color-mix(in srgb, var(--secondary) 80%, black);
+    
+    --white: #ffffff;
+    --white-50: #f8f8f8;
+    --white-100: #f2f2f2;
+    --white-200: #dcdcdc;
+    --white-300: #bdbdbd;
+    --white-400: #989898;
+    --white-500: #7c7c7c;
+    --white-600: #656565;
+    --white-700: #525252;
+    --white-800: #464646;
+    --white-900: #3d3d3d;
+    --white-950: #292929;
+    --black: #141414;
+
+
+
+    /* Шрифтовые семейства */
+
+    --font-family-regular: 'Inter', sans-serif;
+
+    /* Шрифтовые семейства */
+
+
+    /* Шкала кратная 4 */
+
+    --space-0: 0px;
+    --space-1: 4px;
+    --space-2: 8px;
+    --space-3: 12px;
+    --space-4: 16px;
+    --space-5: 24px;
+    --space-6: 32px;
+    --space-7: 48px;
+    --space-8: 64px;
+    --space-9: 80px;
+
+    /* Шкала кратная 4 */
+
+
+
+    --fs-0: clamp(42px, 8vw, 80px);
+    --fs-1: clamp(28px, 5vw, 48px);
+    --fs-2: clamp(22px, 3.2vw, 32px);
+    --fs-3: clamp(18px, 2.4vw, 24px);
+    --fs-4: clamp(14px, 1.6vw, 16px);
+    --fs-5: clamp(12px, 1.2vw, 14px);
+    --fs-6: clamp(10px, 1vw, 12px);
+    --fs-7: clamp(8px, 0.8vw, 10px);
+
+
+
+
+}

@@ -1,0 +1,160 @@
+/* базовая типографика, body, ссылки */
+
+
+body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-family-regular);
+    font-size: var(--fs-4);
+    color: var(--black);
+    line-height: 1.5;
+}
+
+strong {
+    color: black;
+    font-weight: 650;
+}
+
+
+
+h1 {
+    font-size: var(--fs-1);
+    margin: 0;
+    margin-bottom: var(--space-4);
+    line-height: 1;
+}
+
+
+
+h2 {
+    font-size: var(--fs-2);
+    margin: 0;
+    line-height: 1;
+}
+
+h3 {
+    font-size: var(--fs-3);
+    margin: 0;
+    line-height: 1.1;
+}
+
+h4 {
+    font-size: var(--fs-4);
+    margin: 0;
+    line-height: 1.1;
+}
+
+
+
+blockquote {
+    margin-top: var(--space-2);
+    margin-bottom: var(--space-2);
+    margin-left: 0;
+    padding: var(--space-3);
+    background-color: var(--white-100);
+    border-radius: 10px;
+}
+
+
+
+p {
+    font-size: var(--fs-4);
+    margin: 0;
+    max-width: 900px;
+}
+
+.mono {
+    font-style: mono;
+}
+
+
+
+a {
+    color: var(--black);
+    text-decoration: none;
+}
+
+
+
+code {
+    font-family: 'inter', sans-serif;
+    background-color: var(--white-100);
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-size: var(--fs-4);
+    width: fit-content;
+    border: var(--white-200) 1px solid;
+    text-wrap: nowrap;
+}
+
+.p-min {
+    font-size: var(--fs-6);
+    color: var(--black);
+    opacity: 0.7;
+}
+
+.p-min-2 {
+    font-size: var(--fs-7);
+    color: var(--black);
+    opacity: 0.3;
+}
+
+.p-up {
+    font-size: var(--fs-5);
+    color: var(--black);
+    opacity: 0.7;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+mark {
+    font-size: var(--fs-4);
+    width: fit-content;
+}
+
+hr {
+    border-right-width: initial;
+    border-bottom-width: initial;
+    border-left-width: initial;
+    border-right-color: initial;
+    border-bottom-color: initial;
+    border-left-color: initial;
+    width: 99%;
+    border-style: none none none;
+    border-image: initial;
+    border-top: 1px solid var(--white-300);
+}
+
+/* Изображения */
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.field {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-2);
+}
+
+/* Лейбл над инпутом */
+
+.field__label {
+    font-size: var(--fs-4);
+    font-weight: 500;
+}
+
+.field__description {
+    font-size: var(--fs-5);
+    color: var(--white-400);
+}
+
+.field__error {
+    font-size: var(--fs-5);
+    color: var(--orange-500);
+}
+
