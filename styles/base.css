@@ -13,6 +13,11 @@ body {
     line-height: 1.5;
 }
 
+strong {
+    color: black;
+    font-weight: 650;
+}
+
 
 
 h1 {
@@ -32,6 +37,12 @@ h2 {
 
 h3 {
     font-size: var(--fs-3);
+    margin: 0;
+    line-height: 1.1;
+}
+
+h4 {
+    font-size: var(--fs-4);
     margin: 0;
     line-height: 1.1;
 }
@@ -83,6 +94,12 @@ code {
     font-size: var(--fs-6);
     color: var(--black);
     opacity: 0.7;
+}
+
+.p-min-2 {
+    font-size: var(--fs-7);
+    color: var(--black);
+    opacity: 0.3;
 }
 
 .p-up {

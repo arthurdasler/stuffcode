@@ -39,7 +39,7 @@
     <div class="maxw-lg mx-auto padding-2 mt-6">
 
         <div id="download">
-            <a class="btn btn--secondary" href="https://github.com/arthurdasler/stuffcode" target="_blank" >github</a>
+            <a class="btn" href="https://github.com/arthurdasler/stuffcode" target="_blank" >github</a>
         </div>
 
         <div id="about" class="mt-6">
@@ -309,6 +309,9 @@
                     <code> h3 </code>
                     <h3> Заголовки третьего уровня</h3>
                     <hr>
+                    <code> h4 </code>
+                    <h4> Заголовки четвертого уровня</h4>
+                    <hr>
                     <code> p </code>
                     <p> Обычный текст для параграфов </p>
                     <hr>
@@ -319,6 +322,9 @@
                     <hr>
                     <code> p-min </code>
                     <p class="p-min"> мини-текст он же caption </p>
+                    <hr>
+                    <code> p-min-2 </code>
+                    <p class="p-min-2"> это вообще для самых маленьких </p>
                     <hr>
                     <code> p-up </code>
                     <p class="p-up"> Uppercase </p>
@@ -343,31 +349,30 @@
             <div class="mt-7">
                 <h3>Кнопки</h3>
                 <p class="mt-3 mb-3">Все кнопки состоят из двух элементов: </p>
-                <p class="mb-3"> <code>btn</code> – основной стилеобразующий элемент </p>
-                <p> <code>btn--primary</code><code>btn--secondary</code><code>btn--icon</code> – основной
-                    стилеобразующий элемент </p>
+                <p class="mb-3"> <code>btn</code> – основной стилеобразующий элемент. В кнопку помещается текст и иконки 24х24 пикс. </p>
+                <p> <code>btn--disabled</code> –  доп. класс для неактивной кнопки </p>
 
                 <div class="w-full stack-h jc-start ai-center mt-6 mb-6 gap-2" style="flex-wrap: wrap;">
-                    <a class="btn btn--primary" href="http://example.com" target="_blank"> Оформить заявку</a>
-                    <a class="btn btn--secondary" href="http://example.com" target="_blank"> Купить</a>
-                    <a class="btn btn--invis" href="http://example.com" target="_blank"> Оформить заявку</a>
-                    <a class="btn btn--text" href="http://example.com" target="_blank"> Оформить заявку</a>
-                    <a class="btn btn--disabled" href="http://example.com" target="_blank"> Консультация</a>
-                    <a class="btn btn--icon" href="http://example.com" target="_blank"> <img
+                    <a class="btn" href="http://example.com" target="_blank"> Оформить заявку</a>
+                    <a class="btn btn--disabled" href="http://example.com" target="_blank"> Оформить заявку</a>
+                    <a class="btn" href="http://example.com" target="_blank"> <img
                             src="img/icon-plus.svg"></a>
+                    <a class="btn" href="http://example.com" target="_blank"> <img
+                            src="img/grip-icon.svg"></a>
                 </div>
             </div>
 
 
 
             <div class="mt-7 mb-7">
-                <h3>Инпут</h3>
-                <p class="mt-3 mb-3">Компонент инпута в STUFFCODE © всего один. Подойдет для большинства сценариев </p>
-
-                <div class="input">
-                    <input class="input--field" type="email" placeholder="name@example.com">
-                    <button class="btn btn--primary" type="button">Отправить</button>
+                <h3>Бейдж</h3>
+                <p class="mt-3 mb-3">Компонент бейджа для разных сценариев </p>
+                <div class="stack-h gap-2">
+                    <div class="bdg">Бейдж</div>
+                    <div class="bdg bdg--red">Красный бейдж</div>
+                    <div class="bdg bdg--green">Зеленый бейдж</div>
                 </div>
+
             </div>
 
 
